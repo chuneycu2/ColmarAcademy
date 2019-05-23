@@ -1,0 +1,174 @@
+html {
+  font-size: 16px;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* typography */
+
+p {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+a {
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+@media only screen and (max-width: 50rem) {
+  p {
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 32rem) {
+
+}
+
+/* header navigation styles */
+
+header {
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+}
+
+nav p {
+  flex: 1;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+nav p span {
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding-right: 1rem;
+  font-size: 0.8rem;
+}
+
+nav ul li:last-child {
+  padding: 0;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 32rem) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+  }
+}
+
+/* banner styles */
+
+.banner {
+  background-color: #dedede;
+  display: flex;
+}
+
+.banner img {
+  width: 60%;
+  padding: 2rem 1.5rem;
+  align-self: center;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 1.5rem;
+}
+
+.headline p {
+  padding: 1.5rem 0 2rem 0;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+button {
+  background-color: dimgray;
+  width: 100%;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 50rem) {
+  .banner img {
+    width: 50%;
+  }
+  .headline p {
+    font-size: 1rem;
+    padding: 1rem 0 1.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 40rem) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .headline p {
+    font-size: 0.9rem;
+    padding: 0.5rem 0 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 32rem) {
+  .banner {
+    flex-direction: column;
+  }
+  .banner img {
+    width: 100%;
+    padding: 0;
+  }
+}
