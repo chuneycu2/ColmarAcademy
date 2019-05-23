@@ -21,11 +21,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.35rem;
 }
 
 @media only screen and (max-width: 50rem) {
@@ -48,7 +48,7 @@ h3 {
   }
 
   h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 
@@ -115,13 +115,18 @@ nav ul li:last-child {
   display: flex;
 }
 
-.banner img {
+.banner-image {
   width: 60%;
   padding: 2rem 1.5rem;
   align-self: center;
 }
 
+.banner img {
+  width: 100%;
+}
+
 .headline {
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -144,7 +149,7 @@ button {
 }
 
 @media only screen and (max-width: 50rem) {
-  .banner img {
+  .banner-image {
     width: 50%;
   }
   .headline p {
@@ -167,8 +172,178 @@ button {
   .banner {
     flex-direction: column;
   }
-  .banner img {
+  .banner-image {
     width: 100%;
     padding: 0;
+  }
+  .headline {
+    width: 100%;
+    padding: 0
+  }
+  h1 {
+    font-size: 2.25rem;
+    padding: 2rem 1rem 0 1rem;
+  }
+  .headline p {
+    padding: 2rem 1rem;
+    font-size: 1.25rem;
+  }
+  .headline a {
+    padding: 0 1rem 2rem 1rem;
+  }
+}
+
+/* campus info */
+
+.campus-info {
+  display: flex;
+}
+
+.testimonial {
+  width: 60%;
+  background-color: white;
+  padding: 2rem 1.5rem;
+}
+
+.testimonial img {
+  width: 100%;
+  align-self: center;
+}
+
+.testimonial h2 {
+  padding: 2rem 0 1.5rem 0;
+}
+
+.testimonial p:last-of-type {
+  padding: 2rem 0;
+  font-size: 0.75rem;
+}
+
+.side-cards {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem 2rem 0;
+  border-left: 0.5px solid #dedede;
+}
+
+.card {
+  display: flex;
+}
+
+.card:first-child {
+  border-bottom: 0.5px solid #dedede;
+}
+
+.card:first-child img {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.card:last-child {
+  border: none;
+  background-color: #dedede;
+}
+
+.card img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+  align-self: center;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.card-info p {
+  font-size: 0.8rem;
+  padding: 0.75rem 0;
+}
+
+.side-cards:first-child {
+  padding-bottom: 1rem;
+}
+
+.mobile-card-image {
+  display: none;
+}
+
+@media only screen and (max-width: 62.5rem) {
+  h3 {
+    font-size: 1.1rem;
+  }
+  .card {
+    border: none;
+  }
+  .card:first-child {
+    border: none;
+  }
+  .card-info {
+    padding-right: 0.5rem;
+  }
+}
+@media only screen and (max-width: 50rem) {
+  .testimonial {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 48.125rem) {
+  .testimonial {
+    width: 40%;
+  }
+  .side-cards {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 40rem) {
+  .card img {
+    padding: 2.5rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 32rem) {
+  .testimonial {
+    display: none;
+  }
+  .side-cards {
+    width: 100%;
+    padding: 0;
+  }
+  .card {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .card img {
+    width: 100%;
+    padding: 0;
+  }
+  .card:first-child img {
+    padding: 0;
+  }
+  .card:last-child {
+    background-color: white;
+  }
+  .mobile-card-image {
+    display: block;
+    width: 100%;
+  }
+  .card-image {
+    display: none;
+  }
+  .card-info {
+    padding: 4rem 0 3rem 1rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .card-info p {
+    font-size: 1.25rem;
+  }
+  .card-info a {
+    font-size: 1rem;
   }
 }
