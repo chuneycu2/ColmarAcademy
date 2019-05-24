@@ -231,15 +231,15 @@ button {
   display: flex;
 }
 
-.card:first-child {
+.campus-info .card:first-child {
   border-bottom: 0.5px solid #dedede;
 }
 
-.card:first-child img {
+.campus-info .card:first-child img {
   padding: 0 1rem 1rem 1rem;
 }
 
-.card:last-child {
+.campus-info .card:last-child {
   border: none;
   background-color: #dedede;
 }
@@ -263,7 +263,7 @@ button {
   padding: 0.75rem 0;
 }
 
-.side-cards:first-child {
+.campus-info .side-cards:first-child {
   padding-bottom: 1rem;
 }
 
@@ -275,10 +275,10 @@ button {
   h3 {
     font-size: 1.1rem;
   }
-  .card {
+  .campus-info .card {
     border: none;
   }
-  .card:first-child {
+  .campus-info .card:first-child {
     border: none;
   }
   .card-info {
@@ -321,29 +321,29 @@ button {
     width: 100%;
     padding: 0;
   }
-  .card:first-child img {
+  .campus-info .card:first-child img {
     padding: 0;
   }
-  .card:last-child {
+  .campus-info .card:last-child {
     background-color: white;
   }
   .mobile-card-image {
     display: block;
     width: 100%;
   }
-  .card-image {
+  .campus-info .card-image {
     display: none;
   }
-  .card-info {
+  .campus-info .card-info {
     padding: 4rem 0 3rem 1rem;
   }
   h3 {
     font-size: 2rem;
   }
-  .card-info p {
+  .campus-info .card-info p {
     font-size: 1.25rem;
   }
-  .card-info a {
+  .campus-info .card-info a {
     font-size: 1rem;
   }
 }
@@ -365,6 +365,8 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
 .course-grid figure {
@@ -434,4 +436,41 @@ button {
   .course-grid figcaption {
     padding: 0;
   }
+}
+
+/* thesis exhibit styles */
+
+.thesis-exhibit {
+  display: flex;
+}
+
+#title {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.video-container {
+  width: 60%;
+  padding: 0 1.5rem;
+}
+
+video {
+  width: 100%;
+}
+
+.video-container h3 {
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+.video-container p {
+  padding-bottom: 2rem;
+}
+
+.thesis-exhibit .side-cards {
+  border: none;
+  padding: 0;
+}
+
+.thesis-exhibit .side-cards:first-child {
+  background-color: #dedede;
 }
