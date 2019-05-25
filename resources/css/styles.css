@@ -50,9 +50,13 @@ h3 {
 
 header {
   height: 4rem;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 nav {
@@ -66,6 +70,7 @@ nav p {
   flex: 1;
   text-transform: uppercase;
   font-weight: 300;
+  color: #380007;
 }
 
 nav p span {
@@ -79,6 +84,7 @@ nav ul {
 nav ul li {
   padding-right: 1rem;
   font-size: 0.8rem;
+  color: #380007;
 }
 
 nav ul li:last-child {
@@ -98,11 +104,19 @@ nav ul li:last-child {
   }
 }
 
+/* offset container */
+
+.offset-container {
+  position: relative;
+  top: 64px;
+}
+
 /* banner styles */
 
 .banner {
-  background-color: #dedede;
+  background-color: #380007;
   display: flex;
+  color: white;
 }
 
 .banner-image {
@@ -130,12 +144,20 @@ nav ul li:last-child {
 }
 
 button {
-  background-color: dimgray;
+  background-color: #7e2e3c;
+  border: none;
   width: 100%;
   padding: 0.5rem 0;
   cursor: pointer;
   color: white;
   font-size: 1em;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #f4e5df;
+  color: black;
+  transition: 0.2s;
 }
 
 @media only screen and (max-width: 50rem) {
@@ -179,11 +201,11 @@ button {
 
 .campus-info {
   display: flex;
+  background-color: #white;
 }
 
 .testimonial {
   width: 60%;
-  background-color: white;
   padding: 2rem 1.5rem;
 }
 
@@ -254,7 +276,7 @@ button {
 
 .campus-info .card:last-child {
   border: none;
-  background-color: #dedede;
+  background-color: #f4e5df;
 }
 
 @media only screen and (max-width: 62.5rem) {
@@ -341,12 +363,13 @@ button {
 
 .course-container {
   width: 100%;
-  background-color: #dedede;
+  background-color: #380007;
   text-align: center;
 }
 
 .course-container h2 {
   padding: 2rem 0 1rem 0;
+  color: white;
 }
 
 .course-grid {
@@ -360,7 +383,7 @@ button {
 
 .course-grid figure {
   margin: 1rem;
-  background-color: white;
+  background-color: #eeeeee;
   text-align: left;
   width: 30%;
 }
@@ -403,9 +426,7 @@ button {
    }
   .course-grid figure {
     width: 100%;
-    background-color: #dedede;
-  }
-  .course-grid figure {
+    background-color: #f4e5df;
     margin: 0.25rem 1rem;
   }
   .course-grid figure:first-of-type {
@@ -416,7 +437,8 @@ button {
     display: none;
   }
   .course-container {
-    background-color: white;
+    background-color: #380007;
+    padding-bottom: 2rem;
   }
   .course-container > h2 {
     font-size: 2rem;
@@ -435,6 +457,7 @@ button {
 .thesis-exhibit {
   display: flex;
   border-bottom: 0.5px solid #dedede;
+  background-color: #white;
 }
 
 #title {
@@ -465,7 +488,7 @@ video {
 }
 
 .thesis-exhibit .side-cards .card:first-of-type {
-  background-color: #dedede;
+  background-color: #f4e5df;
 }
 
 @media only screen and (max-width: 32rem) {
