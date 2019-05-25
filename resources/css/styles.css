@@ -17,7 +17,6 @@ a {
 
 h1 {
   font-size: 2.25rem;
-  line-height: 1.15;
 }
 
 h2 {
@@ -26,6 +25,25 @@ h2 {
 
 h3 {
   font-size: 1.35rem;
+}
+
+@media only screen and (max-width: 62.5rem) {
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 40rem) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 32rem) {
+  h1 {
+    font-size: 2.25rem;
+    padding: 2rem 1rem 0 1rem;
+  }
 }
 
 /* header navigation styles */
@@ -125,15 +143,11 @@ button {
     width: 50%;
   }
   .headline p {
-    font-size: 1rem;
     padding: 1rem 0 1.5rem 0;
   }
 }
 
 @media only screen and (max-width: 40rem) {
-  h1 {
-    font-size: 1.5rem;
-  }
   .headline p {
     font-size: 0.9rem;
     padding: 0.5rem 0 1rem 0;
@@ -152,10 +166,6 @@ button {
     width: 100%;
     padding: 0
   }
-  h1 {
-    font-size: 2.25rem;
-    padding: 2rem 1rem 0 1rem;
-  }
   .headline p {
     padding: 2rem 1rem;
     font-size: 1.25rem;
@@ -165,7 +175,7 @@ button {
   }
 }
 
-/* campus info */
+/* campus info styles */
 
 .campus-info {
   display: flex;
