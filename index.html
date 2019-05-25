@@ -8,55 +8,55 @@
   <link rel="icon" href="./resources/images/apple-icon.png" type="image/x-icon">
 <body>
   <header>
-    <nav class="desktop">
+    <nav class="desktop" role="navigation">
       <img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo" />
       <p><span>Colmar</span>Academy</p>
       <ul>
-        <li>On campus</li>
-        <li>Online</li>
-        <li>For companies</li>
-        <li>Sign in</li>
+        <li role="menuitem">On campus</li>
+        <li role="menuitem">Online</li>
+        <li role="menuitem">For companies</li>
+        <li role="menuitem">Sign in</li>
       </ul>
     </nav>
-    <nav class="mobile">
-      <img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo" />
-      <img src="./resources/images/ic-on-campus.svg" alt="On campus icon" />
-      <img src="./resources/images/ic-online.svg" alt="Online icon" />
-      <img src="./resources/images/ic-login.svg" alt="Sign in icon" />
+    <nav class="mobile" role="navigation">
+      <img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo" role="menuitem"/>
+      <img src="./resources/images/ic-on-campus.svg" alt="On campus icon" role="menuitem"/>
+      <img src="./resources/images/ic-online.svg" alt="Online icon" role="menuitem"/>
+      <img src="./resources/images/ic-login.svg" alt="Sign in icon" role="menuitem"/>
     </nav>
   </header>
   <div class="offset-container">
     <section class="banner">
-      <div class="banner-image">
-        <img src="./resources/images/banner.jpg" alt="banner image" />
+      <div class="banner-image" role="banner">
+        <img src="./resources/images/banner.jpg" alt="students studying together at picnic table" />
       </div>
-      <div class="headline">
+      <div class="headline" role="heading">
         <h1>Learn something new every day</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <a href=""><button>Start here</button></a>
+        <a href="" role="link"><button role="button">Start here</button></a>
       </div>
     </section>
     <section class="campus-info">
       <div class="testimonial">
-        <img src="./resources/images/information-main.jpg" alt="campus info main image" />
+        <img src="./resources/images/information-main.jpg" alt="student reading a book happily" />
         <h2>It doesn't hurt to keep practicing</h2>
         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         <p>Emanuel, Sr Strategist at Hiring.com
       </div>
-      <div class="side-cards">
+      <div class="side-cards" role="group">
         <div class="card">
           <img class="card-image" src="./resources/images/information-orientation.jpg" alt="information - orientation" />
           <img class="mobile-card-image" src="./resources/images/information-orientation-mobile.jpg" alt="information - orientation" />
-          <div class="card-info">
+          <div class="card-info" role="contentinfo">
             <h3>Orientation date</h3>
             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-            <a href="">Read more</a>
+            <a href="" role="link">Read more</a>
           </div>
         </div>
         <div class="card">
           <img class="card-image" src="./resources/images/information-campus.jpg" alt="information - campus" />
           <img class="mobile-card-image" src="./resources/images/information-campus-mobile.jpg" alt="information - campus" />
-          <div class="card-info">
+          <div class="card-info" role="contentinfo">
             <h3>Our campus</h3>
             <p>Find which campus is close by you</p>
             <a href="">Read more</a>
@@ -65,7 +65,7 @@
         <div class="card">
           <img class="card-image" src="./resources/images/information-guest-lecture.jpg" alt="information - guest lecture" />
           <img class="mobile-card-image" src="./resources/images/information-guest-lecture-mobile.jpg" alt="information - guest lecture" />
-          <div class="card-info">
+          <div class="card-info" role="contentinfo">
             <h3>Our guest lecture</h3>
             <p>Join a keynote with Oliver Sacks about music in medical treatment</p>
             <a href="">Read more</a>
@@ -73,12 +73,12 @@
         </div>
       </div>
     </section>
-    <section class="course-container">
+    <section class="course-container" role="directory">
       <h2>Start learning</h2>
       <div class="course-grid">
         <figure>
           <img src="./resources/images/course-software.jpg" alt="Software engineering course" />
-          <figcaption>
+          <figcaption role="contentinfo">
             <h3>Software Engineering</h3>
             <p>Courses</p>
             <p>Web Development, Mobile Development, iOT, APIs</p>
@@ -86,7 +86,7 @@
         </figure>
         <figure>
           <img src="./resources/images/course-computer-art.jpg" alt="Computer art course" />
-          <figcaption>
+          <figcaption role="contentinfo">
             <h3>Computer art</h3>
             <p>Courses</p>
             <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
@@ -94,7 +94,7 @@
         </figure>
         <figure>
           <img src="./resources/images/course-design.jpg" alt="Design course" />
-          <figcaption>
+          <figcaption role="contentinfo">
             <h3>Design</h3>
             <p>Courses</p>
             <p>User Experience Design, User Research, Visual Design</p>
@@ -102,7 +102,7 @@
         </figure>
         <figure>
           <img src="./resources/images/course-data.jpg" alt="Data course" />
-          <figcaption>
+          <figcaption role="contentinfo">
             <h3>Data</h3>
             <p>Courses</p>
             <p>Data Science, Big Data, SQL, Data Visualization</p>
@@ -110,7 +110,7 @@
         </figure>
         <figure>
           <img src="./resources/images/course-business.jpg" alt="Business course" />
-          <figcaption>
+          <figcaption role="contentinfo">
             <h3>Business</h3>
             <p>Courses</p>
             <p>Product Development, Business Development, Startup</p>
@@ -118,7 +118,7 @@
         </figure>
         <figure>
           <img src="./resources/images/course-marketing.jpg" alt="Software engineering course" />
-          <figcaption>
+          <figcaption role="contentinfo">
             <h3>Marketing</h3>
             <p>Courses</p>
             <p>Analytics, Content Marketing, Mobile Marketing</p>
@@ -136,17 +136,17 @@
         <h3>Reimagine urban</h3>
         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
       </div>
-      <div class="side-cards">
+      <div class="side-cards" role="group">
         <div class="card">
           <img class="card-image" src="./resources/images/thesis-fisma.jpg" alt="Fisma: Design and Prototype" />
-          <div class="card-info">
+          <div class="card-info" role="contentinfo">
             <h3>Fisma: Design and Prototype</h3>
             <p>Designer showcase of a new prototype product</p>
           </div>
         </div>
         <div class="card">
           <img class="card-image" src="./resources/images/thesis-now-and-then.jpg" alt="Now and then" />
-          <div class="card-info">
+          <div class="card-info" role="contentinfo">
             <h3>Now and then</h3>
             <p>Reseaerch study about New York</p>
           </div>
