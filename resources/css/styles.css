@@ -4,7 +4,7 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
-/* typography */
+/* base typography */
 
 p {
   font-size: 1rem;
@@ -26,34 +26,6 @@ h2 {
 
 h3 {
   font-size: 1.35rem;
-}
-
-@media only screen and (max-width: 50rem) {
-  p {
-    font-size: 1rem;
-    line-height: 1.35;
-  }
-
-  a {
-    font-size: 0.9rem;
-  }
-
-  h1 {
-    font-size: 1.75rem;
-    line-height: 1.15;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 32rem) {
-
 }
 
 /* header navigation styles */
@@ -231,23 +203,6 @@ button {
   display: flex;
 }
 
-.campus-info .card:first-child {
-  border-bottom: 0.5px solid #dedede;
-}
-
-.campus-info .card:first-of-type .card-info {
-  padding-bottom: 1rem;
-}
-
-.campus-info .card:first-child img {
-  padding: 0 1rem 1rem 1rem;
-}
-
-.campus-info .card:last-child {
-  border: none;
-  background-color: #dedede;
-}
-
 .card img {
   width: 35%;
   height: auto;
@@ -267,12 +222,29 @@ button {
   padding: 0.75rem 0;
 }
 
+.mobile-card-image {
+  display: none;
+}
+
 .campus-info .side-cards:first-child {
   padding-bottom: 1rem;
 }
 
-.mobile-card-image {
-  display: none;
+.campus-info .card:first-child {
+  border-bottom: 0.5px solid #dedede;
+}
+
+.campus-info .card:first-of-type .card-info {
+  padding-bottom: 1rem;
+}
+
+.campus-info .card:first-child img {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.campus-info .card:last-child {
+  border: none;
+  background-color: #dedede;
 }
 
 @media only screen and (max-width: 62.5rem) {
