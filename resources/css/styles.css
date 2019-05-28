@@ -201,7 +201,7 @@ button:hover {
 
 .campus-info {
   display: flex;
-  background-color: #white;
+  background-color: white;
 }
 
 .testimonial {
@@ -457,7 +457,7 @@ button:hover {
 .thesis-exhibit {
   display: flex;
   border-bottom: 0.5px solid #dedede;
-  background-color: #white;
+  background-color: white;
 }
 
 #title {
